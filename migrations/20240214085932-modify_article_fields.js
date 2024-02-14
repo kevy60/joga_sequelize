@@ -2,7 +2,7 @@
 
 
 module.exports = {
-  up(queryInterface, Sequelize) {
+  async up(queryInterface, Sequelize) {
     return Promise.all([
       queryInterface.changeColumn('articles', 'id', {
         type: Sequelize.INTEGER,
